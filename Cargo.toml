@@ -1,0 +1,65 @@
+[package]
+name = "rs-splited2parquet"
+version = "0.1.0"
+edition = "2024"
+
+description = "Converts csv-like lines to rows and saves as a parquet."
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "deny"
+
+[dependencies.parquet]
+version = "56"
+default-features = false
+features = [
+	"arrow",
+	"async",
+	"brotli",
+	"flate2-zlib-rs",
+	"lz4",
+	"simdutf8",
+	"snap",
+	"zstd",
+]
+
+[dependencies.arrow]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.futures]
+version = "0"
+default-features = false
+features = [
+	"async-await",
+	"executor",
+	"std",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"macros",
+	"rt-multi-thread",
+	"io-util",
+	"io-std",
+]
+
+[dependencies.tokio-stream]
+version = "0"
+default-features = false
+features = [
+	"io-util",
+]
+
+[dependencies.async-stream]
+version = "0"
+default-features = false
+features = [
+]
