@@ -4,6 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 description = "Converts csv-like lines to rows and saves as a parquet."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-splited2parquet"
+homepage = "https://github.com/takanoriyanagitani/rs-splited2parquet"
+documentation = "https://docs.rs/rs-splited2parquet/latest"
+keywords = ["csv", "parquet", "data-conversion"]
+categories = ["command-line-utilities"]
 
 [lints.rust]
 unsafe_code = "forbid"
